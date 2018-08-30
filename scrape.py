@@ -12,7 +12,7 @@ houp= BeautifulSoup(h.content,"html.parser")
 
 print ("KANNADA MOVIES FOR THE WEEKEND")
 print ('==========================================================')
-g_movy=soup.find_all("div",{"class":"card-container wow fadeIn movie-card-container"})
+g_movy=soup.find_all("div",{"class":"card-container wow fadeIn movie-card-container"})      #looks for particular class
 for link in g_movy:
     string=link.find('a')['href'][18:]
     pos=string.find('/')
